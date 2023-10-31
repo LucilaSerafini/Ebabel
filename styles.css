@@ -1,0 +1,468 @@
+/*PALETA DE COLORES
+#A7727D Rosa
+#EDDBC7 Beige 1
+#F8EAD8 Beige 2
+#F9F5E7 Beige 3
+*/
+
+/*Font*/
+@import url('https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300&display=swap');
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Zilla Slab;
+}
+
+.logoheader {
+    width: 30%;
+}
+
+/*HEADER*/
+
+.header {
+    display: grid;
+    flex-direction: row;
+    grid-template-areas:
+        "logoheader title     empty1"
+        "logoheader subtitle  empty2";
+    grid-template-columns: 20% 50% 20%;
+    grid: template rows 10px 10px 10px;
+}
+
+.title {
+    text-decoration: underline;
+    text-align: center;
+    font-size: 200%;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 180%;
+}
+
+
+/*RRSS HEADER*/
+.icon {
+    width: 2%;
+}
+
+/*MENÚ*/
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #A7727D;
+    font-weight: bold;
+    list-style: none;
+}
+
+
+.link {
+    text-decoration: none;
+    color: #EDDBC7;
+}
+
+/*Main Index*/
+.main-index {
+    background-color: #F9F5E7
+}
+
+.facade {
+    width: 100%;
+}
+
+.images-section1 {
+    width: 33%;
+    justify-items: center;
+}
+
+.images-section2 {
+    width: 33%;
+}
+
+.images-section3 {
+    width: 50%;
+}
+
+.index-content {
+    display: grid;
+    grid-template-areas:
+        "images-section1 images-section2 images-section3"
+        "index-text1     index-text2     index-text3"
+        "index-subtext1  index-subtext2   index-subtext3";
+    grid-template-columns: 1/3 repeat(3, 1/3fr);
+    grid-template-rows: 200px 50px 40px;
+    justify-items: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.foundation {
+    width: 100%;
+    border: 2px solid black;
+}
+
+.students {
+    width: 100%;
+    border: 2px solid black;
+}
+
+.teachers {
+    width: 100%;
+    border: 2px solid black;
+}
+
+/*About-us*/
+
+.main-aboutUs {
+    width: 100%;
+    background-color: #F9F5E7;
+}
+
+.aboutUs-content {
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+        "img1 text1"
+        "text2 img2"
+        "img3 text3";
+    grid-template-columns: 50% 50%;
+    margin-left: 1%;
+    margin-right: 1%;
+
+    .institute-photo {
+        grid-area: img1;
+        width: 90%;
+        margin-left: 15px;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        box-shadow: 1px 1px 2px 2px;
+    }
+
+    .ebabel-story {
+        grid-area: text1;
+        display: flex;
+        flex-direction: column;
+        justify-content: justify;
+        align-items: center;
+        margin-left: 10px;
+        margin-top: 30px;
+        margin-right: 50px;
+        margin-bottom: 20px;
+
+    }
+
+    .founder1 {
+        grid-area: text2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-justify: justify;
+        align-items: center;
+        align-content: center;
+        margin-left: 20px;
+        margin-top: 20px;
+        margin-right: 50px;
+        margin-bottom: 20px;
+   
+    }
+
+    .founder1-photo {
+        grid-area: img2;
+        width: 90%;
+        margin-left: 15px;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        box-shadow: 1px 1px 2px 2px;
+    }
+
+    .founder2-photo {
+        grid-area: img3;
+        width: 90%;
+        margin-left: 15px;
+        margin-top: 20px;
+        margin-right: 20px;
+        margin-bottom: 50px;
+        border-radius: 15px;
+        box-shadow: 1px 1px 2px 2px;
+
+    }
+
+    .founder2 {
+        grid-area: text3;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-justify: justify;
+        align-items: center;
+        align-content: center;
+        margin-left: 10px;
+        margin-top: 10px;
+        margin-right: 50px;
+        margin-bottom: 20px;
+
+    }
+}
+.ebabel-story h2 {
+    color: #80575f;
+    font-weight: bolder;
+    font-size: xx-large;
+    font-style: italic;
+    align-items: start;
+    padding-left: 5px;
+    padding-top: 15px;
+    padding-right: 0;
+    padding-bottom: 5px;
+
+}
+
+.founder1 h4{
+    color: #80575f;
+    font-weight: bolder;
+    font-size: xx-large;
+    font-style: italic;
+}
+
+.founder2 h4{
+    color: #80575f;
+    font-weight: bolder;
+    font-size: xx-large;
+    font-style: italic;
+}
+
+
+/*Courses*/
+
+.main-courses {
+    display: grid;
+    grid-template-areas:
+        "img1 text1 img2 text2"
+        "empty-img1 img3 text3 empty-text1"
+        "img4 text4 img5 text5"
+        "empty-img2 img6 text6  empty-text2";
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: max-content;
+
+
+    .children {
+        grid-area: img1;
+        width: 100%;
+    }
+
+    .text-courses-1 {
+        grid-area: text1;
+        background-color: #F9F5E7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: larger;
+        font-weight: bolder;
+        color: #80575f;
+        margin-bottom: 0;
+    }
+
+    .teens {
+        grid-area: img2;
+        width: 100%;
+    }
+
+    .text-courses-2 {
+        grid-area: text2;
+        background-color: #F9F5E7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: larger;
+        font-weight: bolder;
+        color: #80575f;
+        margin-bottom: 0;
+    }
+}
+
+.adults {
+    grid-area: img3;
+    width: 100%;
+}
+
+.text-courses-3 {
+    grid-area: text3;
+    background-color: #F9F5E7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    font-weight: bolder;
+    color: #80575f;
+    margin-bottom: 0;
+}
+
+.company {
+    grid-area: img4;
+    width: 100%;
+}
+
+.text-courses-4 {
+    grid-area: text4;
+    background-color: #F9F5E7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    font-weight: bolder;
+    color: #80575f;
+    margin-bottom: 0;
+}
+
+.online-classes {
+    grid-area: img5;
+    width: 100%;
+}
+
+.text-courses-5 {
+    grid-area: text5;
+    background-color: #F9F5E7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    font-weight: bolder;
+    color: #80575f;
+    margin-bottom: 0;
+}
+
+.text-courses-6 {
+    grid-area: text6;
+    background-color: #F9F5E7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    font-weight: bolder;
+    color: #80575f;
+    margin-bottom: 0;
+}
+
+.individual-classes {
+    grid-area: img6;
+    width: 100%;
+}
+
+.empty-img1 {
+    grid-area: empty-img1;
+    background-color: #EDDBC7;
+}
+
+.empty-text1 {
+    grid-area: empty-text1;
+    background-color: #EDDBC7;
+}
+
+.empty-img2 {
+    grid-area: empty-img2;
+    background-color: #EDDBC7;
+
+}
+
+.empty-text2 {
+    grid-area: empty-text2;
+    background-color: #EDDBC7;
+}
+
+
+
+
+
+
+/*FOOTER*/
+
+.footer {
+    height: 5%;
+    width: 100%;
+}
+
+.footer-content {
+    width: 100%;
+    background-color: #A7727D;
+    display: grid;
+    grid-template-areas:
+        "img1  img2   img3"
+        "img4  img2   img6";
+    grid-template-columns: 20% 60% 20% grid-template-rows 20px 20px;
+
+    .facebook {
+        grid-area: img1;
+    }
+
+    .logo-footer {
+        grid-area: img2;
+    }
+
+    .mail {
+        grid-area: img3;
+    }
+
+    .instagram {
+        grid-area: img4;
+    }
+
+
+    .phone {
+        grid-area: img6;
+    }
+}
+
+.logo-footer img {
+    width: 20%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+}
+
+.logo-footer {
+    text-align: center;
+}
+
+.facebook img {
+    width: 13%;
+    padding-top: 5%;
+    padding-left: 2%;
+}
+
+.instagram img {
+    width: 13%;
+    padding-top: 5%;
+    padding-left: 2%;
+}
+
+.mail img {
+    width: 9%;
+    padding-top: 5%;
+}
+
+.mail {
+    text-align: end;
+    padding-right: 5%;
+}
+
+.phone img {
+    width: 10%;
+    padding-top: 5%;
+}
+
+.phone {
+    text-align: end;
+    padding-right: 5%;
+}

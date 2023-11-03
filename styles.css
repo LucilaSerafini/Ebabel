@@ -17,49 +17,6 @@ body {
     font-family: Zilla Slab;
 }
 
-.logoheader {
-    max-width: 20%;  
-    padding-left: 0;
-    margin-left: 0;
-    background-color: #A7727D;
-    font-size: 2rem;
-}
-
-@media (min-width: 992px){
-    .flex-wrap{
-        flex-wrap: nowrap!important;
-    }
-}
-
-.navbar-brand{
-    max-width: 50%;
-
-    font-size: 1rem;
-}
-
-/*HEADER*/
-
-/* .header{
-    display: grid;
-    flex-direction: row;
-    grid-template-areas:
-        "logoheader title     icon   "
-        "logoheader subtitle  icon";
-    grid-template-columns: 30% 40% 30%;
-    grid: template rows 10px 10px 10px;
-    margin-top: 10px; */
-
-.title {
-    text-decoration: underline;
-    text-align: center;
-    font-size: 200%;
-}
-
-.subtitle {
-    text-align: center;
-    font-size: 180%;
-}
-
 
 /*MENÚ*/
 
@@ -82,6 +39,36 @@ body {
     color: #EDDBC7;
 }
 
+
+.logoheader {
+    max-width: 20%;
+    padding-left: 0;
+    margin-left: 0;
+    background-color: #A7727D;
+    font-size: 2rem;
+}
+
+@media (min-width: 992px) {
+    .flex-wrap {
+        flex-wrap: nowrap !important;
+    }
+}
+
+.navbar-brand {
+    max-width: 50%;
+
+    font-size: 1rem;
+}
+
+.index-title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 200%;
+    margin-top: 3%;
+}
+
+
+
 /*Main Index*/
 .main-index {
     height: 100%;
@@ -92,35 +79,35 @@ body {
     width: 100%;
 }
 
-.index-text{
+.index-text {
     margin-left: 3%;
-    margin-top: 6%;
+    margin-top: 3%;
     margin-right: 3%;
     margin-bottom: 6%;
 
 }
 
-.missionphoto{
+.missionphoto {
     width: 90%;
     border-radius: 8px;
-    box-shadow: gray  4px 4px 4px 4px;
+    box-shadow: gray 4px 4px 4px 4px;
     align-items: center;
 }
 
-.card{
-    background-color:#EDDBC7;   
-    box-shadow: gray  2px 2px 2px 2px ;
+.card {
+    background-color: #EDDBC7;
+    box-shadow: gray 2px 2px 2px 2px;
     align-items: center;
     width: 1rem;
     align-items: center;
     margin: 25px;
 }
 
-.card-body{
+.card-body {
     justify-content: end;
 }
 
-.images-section{
+.images-section {
     margin-top: 40px;
     width: 30%;
     display: flex;
@@ -182,7 +169,7 @@ body {
         margin-top: 20px;
         margin-right: 50px;
         margin-bottom: 20px;
-   
+
     }
 
     .founder1-photo {
@@ -223,6 +210,7 @@ body {
 
     }
 }
+
 .ebabel-story h2 {
     color: #80575f;
     font-weight: bolder;
@@ -236,14 +224,14 @@ body {
 
 }
 
-.founder1 h4{
+.founder1 h4 {
     color: #80575f;
     font-weight: bolder;
     font-size: xx-large;
     font-style: italic;
 }
 
-.founder2 h4{
+.founder2 h4 {
     color: #80575f;
     font-weight: bolder;
     font-size: xx-large;
@@ -393,6 +381,64 @@ body {
 
 
 
+
+
+/*CONTACT*/
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-title {
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 2%;
+}
+
+.contact-subtitle {
+    font-weight: bold;
+}
+
+.contact-label {
+    font-weight: bolder;
+}
+
+@media (min-width:979px) {
+    .contact-container {
+        width: 60%;
+        margin-left: 22%;
+    }
+}
+
+@media (max-width:400px) {
+    .contact-subtitle {
+        margin-left: 2%;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .map {
+        margin-left: 2%;
+    }
+}
+
+.map {
+    margin-top: 2%;
+    height: 80%;
+    width: 100%;
+}
+
+
+
 /*FOOTER*/
 
 .footer {
@@ -404,11 +450,10 @@ body {
     width: 100%;
     background-color: #A7727D;
     display: grid;
-        grid-template-areas:
+    grid-template-areas:
         "img1  img2   img3"
         "img4  img2   img6";
-    grid-template-columns: 20% 60% 20% 
-    grid-template-rows 10px 10px;
+    grid-template-columns: 20% 60% 20% grid-template-rows 10px 10px;
 
     .facebook {
         grid-area: img1;

@@ -489,6 +489,18 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 5%;
+}
+
+.btnContact{
+    background-color: #A7727D;
+    color: #EDDBC7;
+    border-color: #A7727D;
+    font-weight: bold;
+    margin-left: 2%;
+    margin-bottom: 4%;
+    align-content: end ;
+
 }
 
 .contact-title {
@@ -713,13 +725,12 @@ body {
     }
 }
 
-
 /*MQ Contact*/
 
-@media (max-width:979px) {
+@media (max-width:1500px) {
     .contact-container {
         width: 60%;
-        margin-left: 22%;
+        margin-left: 6%;
     }
 
     .map-container {

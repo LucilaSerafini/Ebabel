@@ -67,16 +67,27 @@ body {
     margin-top: 3%;
 }
 
+/*Carousel*/
+
+.carousel-img{
+    height: 30%;
+    width: 100%;
+}
+
+.carousel-img2{
+    width: 100%;
+}
+
+.carousel-img3{
+    width: 100%;
+}
 
 
 /*Main Index*/
+
 .main-index {
     height: 100%;
     background-color: #F9F5E7
-}
-
-.facade {
-    width: 100%;
 }
 
 .index-text {
@@ -94,21 +105,52 @@ body {
     align-items: center;
 }
 
+
 .card {
     background-color: #EDDBC7;
     box-shadow: gray 2px 2px 2px 2px;
     align-items: center;
-    width: 1rem;
+    width: 10rem;
     align-items: center;
-    margin: 25px;
+    margin: 25px
 }
 
+@media only screen and (min-width:400px) {
+    .card{
+        margin-left: 2%;
+    }
+}
+
+
 .card-body {
-    justify-content: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.row-card{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.card-title{
+    font-weight: bold;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.card-subtitle{
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
 }
 
 .images-section {
-    margin-top: 40px;
     width: 30%;
     display: flex;
     flex-direction: row;
@@ -441,6 +483,7 @@ body {
 
 /*FOOTER*/
 
+
 .footer {
     width: 100%;
     background-color: #80575f;
@@ -453,7 +496,8 @@ body {
     grid-template-areas:
         "img1  img2   img3"
         "img4  img2   img6";
-    grid-template-columns: 20% 60% 20% grid-template-rows 10px 10px;
+    grid-template-columns: 20% 60% 20% 
+    grid-template-rows 10px 10px;
 
     .facebook {
         grid-area: img1;
@@ -477,26 +521,33 @@ body {
     }
 }
 
+
 .logo-footer img {
-    width: 20%;
+    width: 40%;
     padding-top: 5%;
     padding-bottom: 3%;
 }
 
-.logo-footer {
-    text-align: center;
+.logo-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .facebook img {
     width: 13%;
     padding-top: 5%;
     padding-left: 2%;
+    text-align: end;
+    
 }
 
 .instagram img {
     width: 13%;
     padding-top: 5%;
     padding-left: 2%;
+    text-align: end;
 }
 
 .mail img {
@@ -517,4 +568,63 @@ body {
 .phone {
     text-align: end;
     padding-right: 5%;
+}
+
+@media only screen and (max-width:400px) {
+
+    .logo-footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5%;
+
+    }
+
+    .logo-footer img {
+        width: 30%;
+         justify-content: center;
+    }
+
+    .facebook img {
+        width: 45%;
+        padding-top: 5%;
+        padding-left: 2%;
+        align-items: end;
+    }
+    
+    .facebook{
+        align-items: end;
+    }
+    
+    .instagram img {
+        width: 45%;
+        padding-top: 5%;
+        padding-left: 2%;
+    }
+
+    .instagram{
+        align-items: end;
+    }
+    
+    .mail img {
+        width: 20%;
+        padding-top: 5%;
+    }
+    
+    .mail {
+        text-align: end;
+        padding-right: 5%;
+        
+    }
+    
+    .phone img {
+        width: 20%;
+        padding-top: 5%;
+    }
+    
+    .phone {
+        text-align: end;
+        padding-right: 5%;
+    } 
+    
 }

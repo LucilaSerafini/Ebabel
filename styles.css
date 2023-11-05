@@ -56,7 +56,6 @@ body {
 
 .navbar-brand {
     max-width: 50%;
-
     font-size: 1rem;
 }
 
@@ -64,7 +63,7 @@ body {
 /*Main Index*/
 
 .main-index {
-    height: 100%;
+    height: 90%;
     background-color: #F9F5E7;
 
 }
@@ -110,13 +109,16 @@ body {
     margin-bottom: 10%;
 }
 
-.card-body {
+.card-bodyIndex {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
 }
+
+
+
 
 .row-card {
     width: 100%;
@@ -291,42 +293,42 @@ body {
         "empty-img2 img6 text6  empty-text2";
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: max-content;
- }
+}
 
 
-    .children {
-        grid-area: img1;
-        width: 100%;
-    }
+.children {
+    grid-area: img1;
+    width: 100%;
+}
 
-    .text-courses-1 {
-        grid-area: text1;
-        background-color: #F9F5E7;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: larger;
-        font-weight: bolder;
-        color: #80575f;
-        margin-bottom: 0;
-    }
+.text-courses-1 {
+    grid-area: text1;
+    background-color: #F9F5E7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    font-weight: bolder;
+    color: #80575f;
+    margin-bottom: 0;
+}
 
-    .teens {
-        grid-area: img2;
-        width: 100%;
-    }
+.teens {
+    grid-area: img2;
+    width: 100%;
+}
 
-    .text-courses-2 {
-        grid-area: text2;
-        background-color: #F9F5E7;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: larger;
-        font-weight: bolder;
-        color: #80575f;
-        margin-bottom: 0;
-    }
+.text-courses-2 {
+    grid-area: text2;
+    background-color: #F9F5E7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    font-weight: bolder;
+    color: #80575f;
+    margin-bottom: 0;
+}
 
 .adults {
     grid-area: img3;
@@ -417,6 +419,62 @@ body {
     background-color: #EDDBC7;
 }
 
+/*other services*/
+
+.exam-mainTitle {
+    display: flex;
+    font-size: xx-large;
+    font-weight: bold;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+
+.exam-container {
+    display: flex;
+    justify-content: center;
+}
+
+.workShops-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card-otherS {
+    width: 30%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 3%;
+    border-radius: 30px;
+    box-shadow: gray 5px 5px 5px 5px;
+    padding-bottom: 2%;
+    background-color: #F9F5E7;
+}
+
+.exam-title {
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.text-exam {
+    text-align: justify;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+.btn {
+    display: flex;
+    width: 50%;
+    background-color: #A7727D;
+    border-color: #A7727D;
+    justify-content: center;
+    margin-left: 25%;
+    font-weight: bold;
+    font-size: medium;
+}
 
 
 
@@ -447,34 +505,13 @@ body {
     font-weight: bolder;
 }
 
-@media (min-width:979px) {
-    .contact-container {
-        width: 60%;
-        margin-left: 22%;
-    }
-}
-
-@media (max-width:400px) {
-    .contact-subtitle {
-        margin-left: 2%;
-    }
-
-    .contact-container {
-        display: flex;
-        flex-direction: column;
-        text-align: start;
-        width: 90%;
-        margin-left: 5%;
-    }
-
-    .map {
-        margin-left: 2%;
-    }
+.map-container {
+    height: 100%;
+    width: 100%;
 }
 
 .map {
-    margin-top: 2%;
-    height: 80%;
+    height: 300px;
     width: 100%;
 }
 
@@ -568,72 +605,19 @@ body {
     padding-right: 5%;
 }
 
-@media only screen and (max-width:400px) {
 
-    .logo-footer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-left: 5%;
-
-    }
-
-    .logo-footer img {
-        width: 30%;
-        justify-content: center;
-    }
-
-    .facebook img {
-        width: 45%;
-        padding-top: 5%;
-        padding-left: 2%;
-        align-items: end;
-    }
-
-    .facebook {
-        align-items: end;
-    }
-
-    .instagram img {
-        width: 45%;
-        padding-top: 5%;
-        padding-left: 2%;
-    }
-
-    .instagram {
-        align-items: end;
-    }
-
-    .mail img {
-        width: 20%;
-        padding-top: 5%;
-    }
-
-    .mail {
-        text-align: end;
-        padding-right: 5%;
-
-    }
-
-    .phone img {
-        width: 20%;
-        padding-top: 5%;
-    }
-
-    .phone {
-        text-align: end;
-        padding-right: 5%;
-    }
-
-}
 
 /*Medias query*/
 
 /*Cards index responsive*/
-@media only screen and (max-width:400px) {
+@media only screen and (max-width:760px) {
 
     .index-title {
-        font-size: xx-large;
+        font-size: x-large;
+    }
+
+    p {
+        font-size: medium;
     }
 
     .index-text {
@@ -650,7 +634,6 @@ body {
 
     }
 
-
     .row-card {
         display: flex;
         flex-direction: column;
@@ -666,29 +649,163 @@ body {
 
 /*MQ Courses responsive*/
 
-@media only screen and (max-width:768px){
+@media only screen and (max-width:768px) {
     .main-courses {
-        background-color:#F9F5E7;
+        background-color: #F9F5E7;
         display: grid;
         grid-template-areas:
-            "img1 text1" 
+            "img1 text1"
             "img2 text2"
             "img3 text3"
-            "img4 text4" 
+            "img4 text4"
             "img5 text5"
             "img6 text6";
-        grid-template-columns: 45% 45%;
+        grid-template-columns: 45% 55%;
         grid-template-rows: max-content;
         row-gap: 10px;
-     }
-    
+        padding-left: 6%;
+        padding-top: 3%;
+    }
+
+    .main-courses h2 {
+        font-size: large;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .text-courses-2 {
+        margin-left: 20%;
+    }
+
+    .text-courses-6 {
+        margin-left: 20%;
+    }
 }
 
 /*MQ about-us*/
 @media only screen and (max-width: 500px) {
 
-    .aboutUs-content{
-        display:list-item;
+    .aboutUs-content {
+        display: list-item;
         margin: 0;
     }
+}
+
+/*MQ Other services*/
+@media only screen and (max-width: 768px) {
+    .exam-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .workShops-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+    }
+
+    .card-otherS {
+        width: 80%;
+
+    }
+}
+
+
+/*MQ Contact*/
+
+@media (max-width:979px) {
+    .contact-container {
+        width: 60%;
+        margin-left: 22%;
+    }
+
+    .map-container {
+        margin-top: 5%;
+        margin-bottom: 0%;
+    }
+}
+
+@media (max-width:500px) {
+    .contact-subtitle {
+        margin-left: 2%;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        width: 80%;
+        margin-left: 10%;
+
+    }
+
+    .map {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+/*MQ footer responsive*/
+
+@media only screen and (max-width:760px) {
+
+    .logo-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5%;
+
+    }
+
+    .logo-footer img {
+        width: 20%;
+        justify-content: center;
+    }
+
+    .facebook img {
+        width: 25%;
+        padding-top: 5%;
+        padding-left: 2%;
+        align-items: end;
+    }
+
+    .facebook {
+        align-items: end;
+    }
+
+    .instagram img {
+        width: 25%;
+        padding-top: 5%;
+        padding-left: 2%;
+    }
+
+    .instagram {
+        align-items: end;
+    }
+
+    .mail img {
+        width: 10%;
+        padding-top: 5%;
+    }
+
+    .mail {
+        text-align: end;
+        padding-right: 5%;
+
+    }
+
+    .phone img {
+        width: 10%;
+        padding-top: 5%;
+    }
+
+    .phone {
+        text-align: end;
+        padding-right: 5%;
+    }
+
 }

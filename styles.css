@@ -144,39 +144,6 @@ body {
     flex-direction: row;
 }
 
-@media only screen and (max-width:400px) {
-
-    .index-title {
-        font-size: xx-large;
-    }
-
-    .index-text {
-        font-size: x-large;
-    }
-
-    .card {
-        width: 60%;
-        align-items: center;
-        margin-left: 3%;
-        margin-top: 3%;
-        margin-right: 3%;
-        margin-bottom: 5%;
-
-    }
-
-
-    .row-card {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .card-title {
-
-        font-weight: bold;
-        font-size: large;
-        text-align: center;
-    }
-}
 
 
 /*About-us*/
@@ -662,6 +629,61 @@ body {
 
 /*Medias query*/
 
+/*Cards index responsive*/
+@media only screen and (max-width:400px) {
+
+    .index-title {
+        font-size: xx-large;
+    }
+
+    .index-text {
+        font-size: x-large;
+    }
+
+    .card {
+        width: 60%;
+        align-items: center;
+        margin-left: 3%;
+        margin-top: 3%;
+        margin-right: 3%;
+        margin-bottom: 5%;
+
+    }
+
+
+    .row-card {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-title {
+
+        font-weight: bold;
+        font-size: large;
+        text-align: center;
+    }
+}
+
+/*MQ Courses responsive*/
+
+@media only screen and (max-width:768px){
+    .main-courses {
+        background-color:#F9F5E7;
+        display: grid;
+        grid-template-areas:
+            "img1 text1" 
+            "img2 text2"
+            "img3 text3"
+            "img4 text4" 
+            "img5 text5"
+            "img6 text6";
+        grid-template-columns: 45% 45%;
+        grid-template-rows: max-content;
+        row-gap: 10px;
+     }
+    
+}
+
 /*MQ about-us*/
 @media only screen and (max-width: 500px) {
 
@@ -669,23 +691,4 @@ body {
         display:list-item;
         margin: 0;
     }
-
-    .story-text{
-        width: 100%;
-        margin-left: 6%;
-        margin-right: 6%;
-    }
-
-    .founder1 {
-        align-content: center;
-        margin-left: 6%;
-        margin-right: 6%;
-    }
-
-    .founder2 {
-        align-content: center;
-        margin-left: 6%;
-        margin-right: 6%;
-    }
-
 }

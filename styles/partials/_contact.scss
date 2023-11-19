@@ -5,7 +5,7 @@
     align-items: center;
     margin-left: 5%;
 
-        .btnContact {
+    .btnContact {
         background-color: #A7727D;
         color: #EDDBC7;
         border-color: #A7727D;
@@ -14,6 +14,7 @@
         margin-bottom: 4%;
         align-content: end;
     }
+
     .contact-title {
         font-weight: bold;
         margin-top: 2%;
@@ -35,5 +36,39 @@
     .map {
         height: 300px;
         width: 100%;
+    }
+
+    /*MQ Contact*/
+    @media only screen and (min-width:760px) {
+        .contact-container {
+            width: 60%;
+            margin-left: 20%;
+        }
+
+        .map-container {
+            margin-top: 5%;
+            margin-bottom: 0%;
+        }
+    }
+
+    @media only screen and (max-width:768px) {
+        .contact-subtitle {
+            margin-left: 2%;
+        }
+
+        .contact-container {
+            display: flex;
+            flex-direction: column;
+            text-align: start;
+            width: 80%;
+            margin-left: 10%;
+
+        }
+
+        .map {
+            width: 90%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
     }
 }

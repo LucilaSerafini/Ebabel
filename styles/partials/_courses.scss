@@ -1,13 +1,14 @@
-.coursesTitle  {
-    h1{ 
-    color: #80575f;
-    background-color: #EDDBC7;
-    font-style: italic;
-    text-align: center;
-    margin-bottom: 0px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    }   
+.coursesTitle {
+    h1 {
+        color: #80575f;
+        background-color: #EDDBC7;
+        font-style: italic;
+        text-align: center;
+        margin-bottom: 0px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
     .main-courses {
         display: grid;
         grid-template-areas:
@@ -18,125 +19,165 @@
         grid-template-columns: 25% 25% 25% 25%;
         grid-template-rows: max-content;
     }
-        .children {
-            grid-area: img1;
-            width: 100%;
-        }
-        .text-courses-1 {
-            grid-area: text1;
+
+    .children {
+        grid-area: img1;
+        width: 100%;
+    }
+
+    .text-courses-1 {
+        grid-area: text1;
+        background-color: #F9F5E7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: larger;
+        font-weight: bolder;
+        color: #80575f;
+        margin-bottom: 0;
+    }
+
+    .teens {
+        grid-area: img2;
+        width: 100%;
+    }
+
+    .text-courses-2 {
+        grid-area: text2;
+        background-color: #F9F5E7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: larger;
+        font-weight: bolder;
+        color: #80575f;
+        margin-bottom: 0;
+    }
+
+    .adults {
+        grid-area: img3;
+        width: 100%;
+    }
+
+    .text-courses-3 {
+        grid-area: text3;
+        background-color: #F9F5E7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: larger;
+        font-weight: bolder;
+        color: #80575f;
+        margin-bottom: 0;
+    }
+
+    .company {
+        grid-area: img4;
+        width: 100%;
+    }
+
+    .text-courses-4 {
+        grid-area: text4;
+        background-color: #F9F5E7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: larger;
+        font-weight: bolder;
+        color: #80575f;
+        margin-bottom: 0;
+    }
+
+    .online-classes {
+        grid-area: img5;
+        width: 100%;
+    }
+
+    .text-courses-5 {
+        grid-area: text5;
+        background-color: #F9F5E7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: larger;
+        font-weight: bolder;
+        color: #80575f;
+        margin-bottom: 0;
+    }
+
+    .text-courses-6 {
+        grid-area: text6;
+        background-color: #F9F5E7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: larger;
+        font-weight: bolder;
+        color: #80575f;
+        margin-bottom: 0;
+    }
+
+    .individual-classes {
+        grid-area: img6;
+        width: 100%;
+    }
+
+    .empty-img1 {
+        grid-area: empty-img1;
+        background-color: #EDDBC7;
+    }
+
+    .empty-text1 {
+        grid-area: empty-text1;
+        background-color: #EDDBC7;
+    }
+
+    .empty-img2 {
+        grid-area: empty-img2;
+        background-color: #EDDBC7;
+
+    }
+
+    .empty-text2 {
+        grid-area: empty-text2;
+        background-color: #EDDBC7;
+    }
+
+    /*MQ Courses responsive*/
+
+    @media only screen and (max-width:768px) {
+        .main-courses {
             background-color: #F9F5E7;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: larger;
-            font-weight: bolder;
-            color: #80575f;
-            margin-bottom: 0;
+            display: grid;
+            grid-template-areas:
+                "img1 text1"
+                "img2 text2"
+                "img3 text3"
+                "img4 text4"
+                "img5 text5"
+                "img6 text6";
+            grid-template-columns: 45% 55%;
+            grid-template-rows: max-content;
+            row-gap: 10px;
+            padding-left: 6%;
+            padding-top: 3%;
+
+            h2 {
+                font-size: large;
+                align-items: center;
+                justify-content: center;
+                align-content: center;
+            }
+
+            .text-courses-2 {
+                margin-left: 20%;
+            }
+
+            .text-courses-6 {
+                margin-left: 20%;
+            }
+
         }
-        
-        .teens {
-            grid-area: img2;
-            width: 100%;
-        }
-        
-        .text-courses-2 {
-            grid-area: text2;
-            background-color: #F9F5E7;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: larger;
-            font-weight: bolder;
-            color: #80575f;
-            margin-bottom: 0;
-        }
-        
-        .adults {
-            grid-area: img3;
-            width: 100%;
-        }
-        
-        .text-courses-3 {
-            grid-area: text3;
-            background-color: #F9F5E7;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: larger;
-            font-weight: bolder;
-            color: #80575f;
-            margin-bottom: 0;
-        }
-        
-        .company {
-            grid-area: img4;
-            width: 100%;
-        }
-        
-        .text-courses-4 {
-            grid-area: text4;
-            background-color: #F9F5E7;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: larger;
-            font-weight: bolder;
-            color: #80575f;
-            margin-bottom: 0;
-        }
-        
-        .online-classes {
-            grid-area: img5;
-            width: 100%;
-        }
-        
-        .text-courses-5 {
-            grid-area: text5;
-            background-color: #F9F5E7;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: larger;
-            font-weight: bolder;
-            color: #80575f;
-            margin-bottom: 0;
-        }
-        
-        .text-courses-6 {
-            grid-area: text6;
-            background-color: #F9F5E7;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: larger;
-            font-weight: bolder;
-            color: #80575f;
-            margin-bottom: 0;
-        }
-        
-        .individual-classes {
-            grid-area: img6;
-            width: 100%;
-        }
-        
-        .empty-img1 {
-            grid-area: empty-img1;
-            background-color: #EDDBC7;
-        }
-        
-        .empty-text1 {
-            grid-area: empty-text1;
-            background-color: #EDDBC7;
-        }
-        
-        .empty-img2 {
-            grid-area: empty-img2;
-            background-color: #EDDBC7;
-        
-        }
-        
-        .empty-text2 {
-            grid-area: empty-text2;
-            background-color: #EDDBC7;
-        }
+
+    }
 }

@@ -30,6 +30,7 @@ header .navbar-brand {
 footer {
   width: 100%;
   background-color: #80575f;
+  /*MQ footer responsive*/
 }
 footer .footer-content {
   width: 100%;
@@ -91,10 +92,56 @@ footer .phone img {
   width: 10%;
   padding-top: 5%;
 }
+@media only screen and (max-width: 760px) {
+  footer .logo-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+  }
+  footer .logo-footer img {
+    width: 20%;
+    justify-content: center;
+  }
+  footer .facebook img {
+    width: 25%;
+    padding-top: 5%;
+    padding-left: 2%;
+    align-items: end;
+  }
+  footer .facebook {
+    align-items: end;
+  }
+  footer .instagram img {
+    width: 25%;
+    padding-top: 5%;
+    padding-left: 2%;
+  }
+  footer .instagram {
+    align-items: end;
+  }
+  footer .mail img {
+    width: 10%;
+    padding-top: 5%;
+  }
+  footer .mail {
+    text-align: end;
+    padding-right: 5%;
+  }
+  footer .phone img {
+    width: 10%;
+    padding-top: 5%;
+  }
+  footer .phone {
+    text-align: end;
+    padding-right: 5%;
+  }
+}
 
 .main-index {
   height: 90%;
   background-color: #F9F5E7;
+  /*Cards index responsive*/
 }
 .main-index .index-title {
   font-weight: bold;
@@ -162,10 +209,39 @@ footer .phone img {
   display: flex;
   flex-direction: row;
 }
+@media only screen and (max-width: 760px) {
+  .main-index .index-title {
+    font-size: x-large;
+  }
+  .main-index .index-title .index-text {
+    font-size: x-large;
+  }
+  .main-index .index-title p {
+    font-size: medium;
+  }
+  .main-index .row-card {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-index .row-card .card {
+    width: 60%;
+    align-items: center;
+    margin-left: 3%;
+    margin-top: 3%;
+    margin-right: 3%;
+    margin-bottom: 5%;
+  }
+  .main-index .row-card .card .card-title {
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+  }
+}
 
 .main-aboutUs {
   width: 100%;
   background-color: #F9F5E7;
+  /*MQ about-us*/
 }
 .main-aboutUs h1 {
   color: #80575f;
@@ -276,7 +352,32 @@ footer .phone img {
   font-size: xx-large;
   font-style: italic;
 }
+@media only screen and (min-width: 760px) {
+  .main-aboutUs .aboutUs-content {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "img1 text1" "text2 img2" "img3  text3 ";
+    grid-template-columns: 50% 50%;
+    margin-left: 1%;
+    margin-right: 1%;
+    flex-direction: flex;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .main-aboutUs .aboutUs-content {
+    width: 100%;
+    display: grid;
+    grid-template-areas: "img1" "text1" "img2" "text2" "img3" "text3";
+    grid-template-columns: 100%;
+    flex-direction: flex;
+    align-items: center;
+  }
+}
 
+.coursesTitle {
+  /*MQ Courses responsive*/
+}
 .coursesTitle h1 {
   color: #80575f;
   background-color: #EDDBC7;
@@ -398,6 +499,30 @@ footer .phone img {
   grid-area: empty-text2;
   background-color: #EDDBC7;
 }
+@media only screen and (max-width: 768px) {
+  .coursesTitle .main-courses {
+    background-color: #F9F5E7;
+    display: grid;
+    grid-template-areas: "img1 text1" "img2 text2" "img3 text3" "img4 text4" "img5 text5" "img6 text6";
+    grid-template-columns: 45% 55%;
+    grid-template-rows: max-content;
+    row-gap: 10px;
+    padding-left: 6%;
+    padding-top: 3%;
+  }
+  .coursesTitle .main-courses h2 {
+    font-size: large;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+  }
+  .coursesTitle .main-courses .text-courses-2 {
+    margin-left: 20%;
+  }
+  .coursesTitle .main-courses .text-courses-6 {
+    margin-left: 20%;
+  }
+}
 
 .exam-mainTitle {
   display: flex;
@@ -455,6 +580,7 @@ footer .phone img {
 .workShops-container {
   display: flex;
   justify-content: center;
+  /*MQ Other services*/
 }
 .workShops-container .exam-title {
   font-size: x-large;
@@ -467,6 +593,22 @@ footer .phone img {
   padding-left: 10%;
   padding-right: 10%;
 }
+@media only screen and (max-width: 768px) {
+  .workShops-container .exam-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .workShops-container .workShops-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+  }
+  .workShops-container .card-otherS {
+    width: 80%;
+  }
+}
 
 .contact-form {
   display: flex;
@@ -474,6 +616,7 @@ footer .phone img {
   justify-content: center;
   align-items: center;
   margin-left: 5%;
+  /*MQ Contact*/
 }
 .contact-form .btnContact {
   background-color: #A7727D;
@@ -502,173 +645,30 @@ footer .phone img {
   height: 300px;
   width: 100%;
 }
-
-/*Medias query*/
-/*Cards index responsive*/
-@media only screen and (max-width: 760px) {
-  .index-title {
-    font-size: x-large;
-  }
-  p {
-    font-size: medium;
-  }
-  .index-text {
-    font-size: x-large;
-  }
-  .card {
-    width: 60%;
-    align-items: center;
-    margin-left: 3%;
-    margin-top: 3%;
-    margin-right: 3%;
-    margin-bottom: 5%;
-  }
-  .row-card {
-    display: flex;
-    flex-direction: column;
-  }
-  .card-title {
-    font-weight: bold;
-    font-size: large;
-    text-align: center;
-  }
-}
-/*MQ Courses responsive*/
-@media only screen and (max-width: 768px) {
-  .main-courses {
-    background-color: #F9F5E7;
-    display: grid;
-    grid-template-areas: "img1 text1" "img2 text2" "img3 text3" "img4 text4" "img5 text5" "img6 text6";
-    grid-template-columns: 45% 55%;
-    grid-template-rows: max-content;
-    row-gap: 10px;
-    padding-left: 6%;
-    padding-top: 3%;
-  }
-  .main-courses h2 {
-    font-size: large;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-  }
-  .text-courses-2 {
-    margin-left: 20%;
-  }
-  .text-courses-6 {
-    margin-left: 20%;
-  }
-}
-/*MQ about-us*/
 @media only screen and (min-width: 760px) {
-  .aboutUs-content {
-    width: 100%;
-    display: grid;
-    grid-template-areas: "img1 text1" "text2 img2" "img3  text3 ";
-    grid-template-columns: 50% 50%;
-    margin-left: 1%;
-    margin-right: 1%;
-    flex-direction: flex;
-    align-items: center;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .aboutUs-content {
-    width: 100%;
-    display: grid;
-    grid-template-areas: "img1" "text1" "img2" "text2" "img3" "text3";
-    grid-template-columns: 100%;
-    flex-direction: flex;
-    align-items: center;
-  }
-}
-/*MQ Other services*/
-@media only screen and (max-width: 768px) {
-  .exam-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .workShops-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 10px;
-  }
-  .card-otherS {
-    width: 80%;
-  }
-}
-/*MQ Contact*/
-@media (min-width: 768px) {
-  .contact-container {
+  .contact-form .contact-container {
     width: 60%;
     margin-left: 20%;
   }
-  .map-container {
+  .contact-form .map-container {
     margin-top: 5%;
     margin-bottom: 0%;
   }
 }
-@media (max-width: 768px) {
-  .contact-subtitle {
+@media only screen and (max-width: 768px) {
+  .contact-form .contact-subtitle {
     margin-left: 2%;
   }
-  .contact-container {
+  .contact-form .contact-container {
     display: flex;
     flex-direction: column;
     text-align: start;
     width: 80%;
     margin-left: 10%;
   }
-  .map {
+  .contact-form .map {
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
-  }
-}
-/*MQ footer responsive*/
-@media only screen and (max-width: 760px) {
-  .logo-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 5%;
-  }
-  .logo-footer img {
-    width: 20%;
-    justify-content: center;
-  }
-  .facebook img {
-    width: 25%;
-    padding-top: 5%;
-    padding-left: 2%;
-    align-items: end;
-  }
-  .facebook {
-    align-items: end;
-  }
-  .instagram img {
-    width: 25%;
-    padding-top: 5%;
-    padding-left: 2%;
-  }
-  .instagram {
-    align-items: end;
-  }
-  .mail img {
-    width: 10%;
-    padding-top: 5%;
-  }
-  .mail {
-    text-align: end;
-    padding-right: 5%;
-  }
-  .phone img {
-    width: 10%;
-    padding-top: 5%;
-  }
-  .phone {
-    text-align: end;
-    padding-right: 5%;
   }
 }/*# sourceMappingURL=estilos.css.map */

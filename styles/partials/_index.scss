@@ -1,0 +1,75 @@
+.main-index {
+    height: 90%;
+    background-color: #F9F5E7;
+
+    .index-title {
+        font-weight: bold;
+        text-align: center;
+        justify-content: center;
+        font-size: 3rem;
+        margin-top: 3%;
+    }
+    
+    .index-text {
+        justify-content: center;
+        align-items: center;
+        margin-left: 5%;
+        margin-top: 3%;
+        margin-right: 5%;
+        font-size: x-large;
+        text-align: justify;
+    }
+    .missionphoto {
+        height: 70%;
+        width: 100%;
+        border-radius: 50px;
+        box-shadow: gray 4px 4px 4px 4px;
+        align-items: center;
+        margin-top: 4%;
+        margin-bottom: 5%;
+    }
+    .row-card {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+     }
+        .card {
+            background-color: #EDDBC7;
+            box-shadow: gray 2px 2px 2px 2px;
+            align-items: center;
+            width: 10rem;
+            align-items: center;
+            margin-left: 4%;
+            margin-top: 3%;
+            margin-right: 4%;
+            margin-bottom: 10%;
+
+            &:hover {
+                filter: opacity(.4);
+            }
+
+        .card-body {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+                .card-title {
+                    font-weight: bold;
+                    font-size: xx-large;
+                    text-align: center;
+                }
+                .card-subtitle {
+                    font-weight: bold;
+                    font-size: x-large;
+                    text-align: center;
+                }
+                .images-section {
+                    width: 30%;
+                    display: flex;
+                    flex-direction: row;
+                }
+    }   
+}
+

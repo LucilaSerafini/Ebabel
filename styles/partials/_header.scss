@@ -1,0 +1,31 @@
+header{
+    .menu {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0;
+        justify-content: space-between;
+        padding-left: 2%;
+        padding-right: 2%;
+        background-color: #A7727D;
+        font-weight: normal;
+        list-style: none;
+        align-content: center;
+    }       
+    .link {
+        text-decoration: none;
+        color: #EDDBC7;
+    } 
+    
+    .logoheader {
+        max-width: 20%;
+        padding-left: 0;
+        margin-left: 0;
+        background-color: #A7727D;
+        font-size: 2rem;
+    }
+    
+    .navbar-brand {
+        max-width: 50%;
+        font-size: 1rem;
+    }
+}

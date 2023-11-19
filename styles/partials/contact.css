@@ -1,0 +1,34 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5%;
+}
+.contact-form .btnContact {
+  background-color: #A7727D;
+  color: #EDDBC7;
+  border-color: #A7727D;
+  font-weight: bold;
+  margin-left: 2%;
+  margin-bottom: 4%;
+  align-content: end;
+}
+.contact-form .contact-title {
+  font-weight: bold;
+  margin-top: 2%;
+}
+.contact-form .contact-subtitle {
+  font-weight: bold;
+}
+.contact-form .contact-label {
+  font-weight: bolder;
+}
+.contact-form .map-container {
+  height: 100%;
+  width: 100%;
+}
+.contact-form .map {
+  height: 300px;
+  width: 100%;
+}/*# sourceMappingURL=contact.css.map */

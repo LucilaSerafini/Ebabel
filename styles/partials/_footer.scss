@@ -1,0 +1,81 @@
+footer {
+    width: 100%;
+    background-color: #80575f;
+
+    .footer-content {
+        width: 100%;
+        background-color: #A7727D;
+        display: grid;
+        grid-template-areas:
+            "img1  img2   img3"
+            "img4  img2   img6";
+        grid-template-columns: 20% 60% 20% 
+        grid-template-rows 10px 10px;
+    
+        .facebook {
+            grid-area: img1;
+        }
+    
+        .logo-footer {
+            grid-area: img2;
+        }
+    
+        .mail {
+            grid-area: img3;
+        }
+    
+        .instagram {
+            grid-area: img4;
+        }
+    
+    
+        .phone {
+            grid-area: img6;
+        }
+    }
+
+    .logo-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 40%;
+        padding-top: 5%;
+        padding-bottom: 3%;
+    }
+    }
+
+    .facebook img {
+    width: 13%;
+    padding-top: 5%;
+    padding-left: 2%;
+    text-align: end;
+    }
+
+    .instagram img {
+    width: 13%;
+    padding-top: 5%;
+    padding-left: 2%;
+    text-align: end;
+    }
+
+
+    .mail {
+        text-align: end;
+        padding-right: 5%;
+        img{
+            width: 9%;
+            padding-top: 5%;
+        }
+    }
+
+    .phone {
+        text-align: end;
+        padding-right: 5%;
+        img{
+            width: 10%;
+            padding-top: 5%;
+        }
+    }
+    
+}

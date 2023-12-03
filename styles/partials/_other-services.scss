@@ -1,95 +1,60 @@
- main h1 {
-     display: flex;
-     font-size: xx-large;
-     font-weight: bold;
-     justify-content: center;
- }
+.other-services {
+    h1 {
+        display: flex;
+        font-size: xx-large;
+        font-weight: bold;
+        justify-content: center;
+    }
 
- .exam-mainTitle {
-     display: flex;
-     font-size: xx-large;
-     font-weight: bold;
-     justify-content: center;
-     margin-top: 2%;
-     margin-bottom: 1%;
- }
+    .exam-mainTitle {
+        color: #A7727D;
+        display: flex;
+        font-size: xx-large;
+        font-weight: bold;
+        font-style: italic;
+        justify-content: center;
+        margin-top: 2%;
+        margin-bottom: 1%;
+    }
 
- .exam-container {
-     display: flex;
-     justify-content: center;
- }
+    .exams {
+        justify-content: center;
+    }
 
- .card-otherS {
-     width: 30%;
-     margin-left: 3%;
-     margin-right: 3%;
-     margin-bottom: 3%;
-     border-radius: 30px;
-     box-shadow: gray 5px 5px 5px 5px;
-     padding-bottom: 2%;
-     background-color: #F9F5E7;
- }
+    .card-otherS {
+        border-radius: 20px;
+        box-shadow: gray 4px 4px 4px 4px;
+        background-color: #F9F5E7;
+    }
 
- .card-otherS:hover {
-     filter: opacity(.4);
- }
+    .card-otherS:hover {
+        filter: opacity(.4);
+    }
 
- .exam-title {
-     font-size: x-large;
-     font-weight: bold;
-     text-align: center;
-     padding-top: 10%;
- }
+    .btn {
+        width: 50%;
+        background-color: #A7727D;
+        border-color: #A7727D;
+        justify-content: center;
+        margin-left: 25%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-weight: bold;
+        font-size: medium;
+    }
 
- .text-exam {
-     text-align: justify;
-     padding-left: 10%;
-     padding-right: 10%;
- }
+    .workShops {
+        justify-content: center;
+    }
 
- .btn {
-     display: flex;
-     width: 50%;
-     background-color: #A7727D;
-     border-color: #A7727D;
-     justify-content: center;
-     margin-left: 25%;
-     font-weight: bold;
-     font-size: medium;
- }
+    .card-title {
+        font-size: x-large;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 10%;
+    }
 
- .workShops-container {
-     display: flex;
-     justify-content: center;
- }
-
- .exam-title {
-     font-size: x-large;
-     font-weight: bold;
-     text-align: center;
-     padding-top: 10%;
- }
-
- .text-exam {
-     text-align: justify;
-     padding-left: 10%;
-     padding-right: 10%; 
-  }
-
-      /*MQ Other services*/
-
-     @media screen and (max-width: 768px) {
-         .exam-container {
-             display: flex;
-             flex-direction: column;
-             align-items: center;
-         }
+    .card-text {
+        text-align: justify;
+    }
 }
-
-         .workShops-container {
-             display: flex;
-             flex-direction: column;
-             align-items: center;
-             row-gap: 10px;
-         }
-        

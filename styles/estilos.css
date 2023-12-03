@@ -92,7 +92,7 @@ footer .phone img {
   width: 10%;
   padding-top: 5%;
 }
-@media only screen and (max-width: 760px) {
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
   footer .logo-footer {
     display: flex;
     align-items: center;
@@ -352,7 +352,7 @@ footer .phone img {
   font-size: xx-large;
   font-style: italic;
 }
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 768px) {
   .main-aboutUs .aboutUs-content {
     width: 100%;
     display: grid;
@@ -364,7 +364,7 @@ footer .phone img {
     align-items: center;
   }
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .main-aboutUs .aboutUs-content {
     width: 100%;
     display: grid;
@@ -375,8 +375,9 @@ footer .phone img {
   }
 }
 
+.coursesTitle {
   /*MQ Courses responsive*/
-
+}
 .coursesTitle h1 {
   color: #80575f;
   background-color: #EDDBC7;
@@ -523,16 +524,14 @@ footer .phone img {
   }
 }
 
-main h1 {
+.other-services h1 {
   display: flex;
   font-size: xx-large;
   font-weight: bold;
   justify-content: center;
-  margin-bottom: 1%;
 }
-
-.exam-mainTitle {
-  color: #80575f;
+.other-services .exam-mainTitle {
+  color: #A7727D;
   display: flex;
   font-size: xx-large;
   font-weight: bold;
@@ -541,143 +540,76 @@ main h1 {
   margin-top: 2%;
   margin-bottom: 1%;
 }
-
-.exam-container {
-  display: flex;
+.other-services .exams {
   justify-content: center;
 }
-
-.card-otherS {
-  width: 30%;
-  margin-left: 3%;
-  margin-right: 3%;
-  margin-bottom: 3%;
-  border-radius: 30px;
-  box-shadow: gray 5px 5px 5px 5px;
-  padding-bottom: 2%;
+.other-services .card-otherS {
+  border-radius: 20px;
+  box-shadow: gray 4px 4px 4px 4px;
   background-color: #F9F5E7;
 }
-
-.card-otherS:hover {
+.other-services .card-otherS:hover {
   filter: opacity(0.4);
 }
-
-.exam-title {
-  font-size: x-large;
-  font-weight: bold;
-  text-align: center;
-  padding-top: 10%;
-}
-
-.text-exam {
-  text-align: justify;
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-.btn {
-  display: flex;
+.other-services .btn {
   width: 50%;
   background-color: #A7727D;
   border-color: #A7727D;
   justify-content: center;
   margin-left: 25%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   font-weight: bold;
   font-size: medium;
 }
-
-.workShops-container {
-  display: flex;
+.other-services .workShops {
   justify-content: center;
-  /*MQ Other services*/
 }
-.workShops-container .exam-title {
+.other-services .card-title {
   font-size: x-large;
   font-weight: bold;
   text-align: center;
   padding-top: 10%;
 }
-.workShops-container .text-exam {
+.other-services .card-text {
   text-align: justify;
-  padding-left: 10%;
-  padding-right: 10%;
-}
-@media only screen and (max-width: 768px) {
-  .workShops-container .exam-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .workShops-container .workShops-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 10px;
-  }
-  .workShops-container .card-otherS {
-    width: 80%;
-  }
 }
 
-.contact-form {
+.main-contact .contact-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-left: 5%;
-  /*MQ Contact*/
+  margin-right: 5%;
 }
-.contact-form .btnContact {
-  background-color: #A7727D;
-  color: #EDDBC7;
-  border-color: #A7727D;
-  font-weight: bold;
-  margin-left: 2%;
-  margin-bottom: 4%;
-  align-content: end;
-}
-.contact-form .contact-title {
+.main-contact .contact-form .contact-title {
   font-weight: bold;
   margin-top: 2%;
 }
-.contact-form .contact-subtitle {
+.main-contact .contact-form .contact-subtitle {
   font-weight: bold;
 }
-.contact-form .contact-label {
+.main-contact .form-container {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 10%;
+}
+.main-contact .form-container .form-label {
   font-weight: bolder;
 }
-.contact-form .map-container {
+.main-contact .form-container .btnContact {
+  background-color: #80575f;
+  border-color: #80575f;
+  color: #EDDBC7;
+  font-weight: bold;
+  margin-bottom: 3%;
+}
+.main-contact .map-container {
   height: 100%;
   width: 100%;
 }
-.contact-form .map {
+.main-contact .map {
   height: 300px;
   width: 100%;
-}
-@media only screen and (min-width: 760px) {
-  .contact-form .contact-container {
-    width: 60%;
-    margin-left: 20%;
-  }
-  .contact-form .map-container {
-    margin-top: 5%;
-    margin-bottom: 0%;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .contact-form .contact-subtitle {
-    margin-left: 2%;
-  }
-  .contact-form .contact-container {
-    display: flex;
-    flex-direction: column;
-    text-align: start;
-    width: 80%;
-    margin-left: 10%;
-  }
-  .contact-form .map {
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
-  }
 }/*# sourceMappingURL=estilos.css.map */

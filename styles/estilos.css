@@ -375,9 +375,8 @@ footer .phone img {
   }
 }
 
-.coursesTitle {
   /*MQ Courses responsive*/
-}
+
 .coursesTitle h1 {
   color: #80575f;
   background-color: #EDDBC7;
@@ -524,10 +523,20 @@ footer .phone img {
   }
 }
 
-.exam-mainTitle {
+main h1 {
   display: flex;
   font-size: xx-large;
   font-weight: bold;
+  justify-content: center;
+  margin-bottom: 1%;
+}
+
+.exam-mainTitle {
+  color: #80575f;
+  display: flex;
+  font-size: xx-large;
+  font-weight: bold;
+  font-style: italic;
   justify-content: center;
   margin-top: 2%;
   margin-bottom: 1%;

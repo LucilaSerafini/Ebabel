@@ -1,7 +1,6 @@
 footer {
     width: 100%;
     background-color: #80575f;
-
     .footer-content {
         width: 100%;
         background-color: #A7727D;
@@ -15,11 +14,9 @@ footer {
         img {
             width: 12%;
         }
-
         .facebook {
             grid-area: img1;
         }
-
         .logo-footer {
             grid-area: img2;
             display: flex;
@@ -31,7 +28,6 @@ footer {
                 width: 30%;
             }
         }
-
         .mail {
             grid-area: img3;
             text-align-last: end;

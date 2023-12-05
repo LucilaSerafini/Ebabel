@@ -30,111 +30,48 @@ header .navbar-brand {
 footer {
   width: 100%;
   background-color: #80575f;
-  /*MQ footer responsive*/
 }
 footer .footer-content {
   width: 100%;
   background-color: #A7727D;
   display: grid;
   grid-template-areas: "img1  img2   img3" "img4  img2   img6";
-  grid-template-columns: 20% 60% 20% grid-template-rows 10px 10px;
+  grid-template-columns: 20% 60% 20%;
+  align-items: center;
+  padding: 1%;
+}
+footer .footer-content img {
+  width: 12%;
 }
 footer .footer-content .facebook {
   grid-area: img1;
 }
 footer .footer-content .logo-footer {
   grid-area: img2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%;
+}
+footer .footer-content .logo-footer img {
+  width: 30%;
 }
 footer .footer-content .mail {
   grid-area: img3;
+  -moz-text-align-last: end;
+       text-align-last: end;
 }
 footer .footer-content .instagram {
   grid-area: img4;
 }
 footer .footer-content .phone {
   grid-area: img6;
+  -moz-text-align-last: end;
+       text-align-last: end;
 }
-footer .logo-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-footer .logo-footer img {
-  width: 40%;
-  padding-top: 5%;
-  padding-bottom: 3%;
-}
-footer .facebook img {
-  width: 13%;
-  padding-top: 5%;
-  padding-left: 2%;
-  text-align: end;
-}
-footer .instagram img {
-  width: 13%;
-  padding-top: 5%;
-  padding-left: 2%;
-  text-align: end;
-}
-footer .mail {
-  text-align: end;
-  padding-right: 5%;
-}
-footer .mail img {
-  width: 9%;
-  padding-top: 5%;
-}
-footer .phone {
-  text-align: end;
-  padding-right: 5%;
-}
-footer .phone img {
-  width: 10%;
-  padding-top: 5%;
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  footer .logo-footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: 5%;
-  }
-  footer .logo-footer img {
-    width: 20%;
-    justify-content: center;
-  }
-  footer .facebook img {
+@media only screen and (min-width: 300px) and (max-width: 1024px) {
+  footer .footer-content img {
     width: 25%;
-    padding-top: 5%;
-    padding-left: 2%;
-    align-items: end;
-  }
-  footer .facebook {
-    align-items: end;
-  }
-  footer .instagram img {
-    width: 25%;
-    padding-top: 5%;
-    padding-left: 2%;
-  }
-  footer .instagram {
-    align-items: end;
-  }
-  footer .mail img {
-    width: 10%;
-    padding-top: 5%;
-  }
-  footer .mail {
-    text-align: end;
-    padding-right: 5%;
-  }
-  footer .phone img {
-    width: 10%;
-    padding-top: 5%;
-  }
-  footer .phone {
-    text-align: end;
-    padding-right: 5%;
   }
 }
 
@@ -373,9 +310,6 @@ footer .phone img {
   }
 }
 
-.coursesTitle {
-  /*MQ Courses responsive*/
-}
 .coursesTitle h1 {
   color: #80575f;
   background-color: #EDDBC7;
@@ -634,14 +568,10 @@ footer .phone img {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 2%;
+  margin-top: 6%;
+  margin-bottom: 5%;
 }
 .main-contact .map-container .map {
   height: 300px;
   width: 90%;
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .main-contact .main-contact {
-    width: auto;
-  }
 }/*# sourceMappingURL=estilos.css.map */

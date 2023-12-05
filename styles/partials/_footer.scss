@@ -9,7 +9,12 @@ footer {
         grid-template-areas:
             "img1  img2   img3"
             "img4  img2   img6";
-        grid-template-columns: 20% 60% 20% grid-template-rows 10px 10px;
+        grid-template-columns: 20% 60% 20%;
+        align-items: center;
+        padding: 1%;
+        img {
+            width: 12%;
+        }
 
         .facebook {
             grid-area: img1;
@@ -17,127 +22,35 @@ footer {
 
         .logo-footer {
             grid-area: img2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1%;
+
+            img {
+                width: 30%;
+            }
         }
 
         .mail {
             grid-area: img3;
+            text-align-last: end;
         }
 
         .instagram {
             grid-area: img4;
         }
 
-
         .phone {
             grid-area: img6;
+            text-align-last: end;
         }
     }
-
-    .logo-footer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        img {
-            width: 40%;
-            padding-top: 5%;
-            padding-bottom: 3%;
+    @media only screen and (min-width:300px) and (max-width: 1024px) {
+        .footer-content {
+            img {
+                width: 25%;
+            }
         }
-    }
-
-    .facebook img {
-        width: 13%;
-        padding-top: 5%;
-        padding-left: 2%;
-        text-align: end;
-    }
-
-    .instagram img {
-        width: 13%;
-        padding-top: 5%;
-        padding-left: 2%;
-        text-align: end;
-    }
-
-
-    .mail {
-        text-align: end;
-        padding-right: 5%;
-
-        img {
-            width: 9%;
-            padding-top: 5%;
-        }
-    }
-
-    .phone {
-        text-align: end;
-        padding-right: 5%;
-
-        img {
-            width: 10%;
-            padding-top: 5%;
-        }
-    }
-
-    /*MQ footer responsive*/
-
-    @media only screen and (min-width:768px) and (max-width:1024px) {
-
-        .logo-footer {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-left: 5%;
-
-        }
-
-        .logo-footer img {
-            width: 20%;
-            justify-content: center;
-        }
-
-        .facebook img {
-            width: 25%;
-            padding-top: 5%;
-            padding-left: 2%;
-            align-items: end;
-        }
-
-        .facebook {
-            align-items: end;
-        }
-
-        .instagram img {
-            width: 25%;
-            padding-top: 5%;
-            padding-left: 2%;
-        }
-
-        .instagram {
-            align-items: end;
-        }
-
-        .mail img {
-            width: 10%;
-            padding-top: 5%;
-        }
-
-        .mail {
-            text-align: end;
-            padding-right: 5%;
-
-        }
-
-        .phone img {
-            width: 10%;
-            padding-top: 5%;
-        }
-
-        .phone {
-            text-align: end;
-            padding-right: 5%;
-        }
-
     }
 }

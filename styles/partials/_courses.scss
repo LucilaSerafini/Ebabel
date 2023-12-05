@@ -29,6 +29,7 @@
         grid-area: text1;
         background-color: #F9F5E7;
         display: flex;
+        text-wrap:balance;
         align-items: center;
         justify-content: center;
         font-size: larger;
@@ -46,11 +47,13 @@
         grid-area: text2;
         background-color: #F9F5E7;
         display: flex;
+        text-wrap:balance;
         align-items: center;
         justify-content: center;
         font-size: larger;
         font-weight: bolder;
         color: #80575f;
+        margin-left:20%;
         margin-bottom: 0;
     }
 
@@ -63,6 +66,7 @@
         grid-area: text3;
         background-color: #F9F5E7;
         display: flex;
+        text-wrap:balance;
         align-items: center;
         justify-content: center;
         font-size: larger;
@@ -80,6 +84,7 @@
         grid-area: text4;
         background-color: #F9F5E7;
         display: flex;
+        text-wrap:balance;
         align-items: center;
         justify-content: center;
         font-size: larger;
@@ -97,6 +102,7 @@
         grid-area: text5;
         background-color: #F9F5E7;
         display: flex;
+        text-wrap:balance;
         align-items: center;
         justify-content: center;
         font-size: larger;
@@ -109,6 +115,7 @@
         grid-area: text6;
         background-color: #F9F5E7;
         display: flex;
+        text-wrap:balance;
         align-items: center;
         justify-content: center;
         font-size: larger;
@@ -161,19 +168,14 @@
             padding-top: 3%;
 
             h2 {
-                font-size: large;
+                font-size: small;
                 align-items: center;
                 justify-content: center;
                 align-content: center;
-            }
-
-            .text-courses-2 {
                 margin-left: 20%;
             }
 
-            .text-courses-6 {
-                margin-left: 20%;
-            }
+
 
         }
 
